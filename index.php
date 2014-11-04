@@ -14,6 +14,160 @@
 
 <fieldset>
 	<legend>
+		获取广告
+	</legend>
+	<form action="http://localhost/aodshop/api/getAdvertisings/1/0/1" method="post" enctype="multipart/form-data">
+		<input type="submit" value="submit" />
+	</form>
+</fieldset>
+
+<fieldset>
+	<legend>
+		浏览个人商家收藏
+	</legend>
+	<form action="http://localhost/aodshop/api/listShopCollection" method="post" enctype="multipart/form-data">
+		<label>用户名</label>
+		<br />
+		<input type="text" value="2" name="userid" />
+		<br />
+		<label>key</label>
+		<br />
+		<input type="text" value="128ffd8b241af0ac44a526138d6699ad2762c611" name="appkey" />
+		<br />
+		<label>start</label>
+		<br />
+		<input type="text" value="1" name="start" />
+		<br />
+		<label>number</label>
+		<br />
+		<input type="text" value="1" name="number" />
+		<br />
+		<input type="submit" value="submit" />
+	</form>
+</fieldset>
+
+<fieldset>
+	<legend>
+		删除商品收藏
+	</legend>
+	<form action="http://localhost/aodshop/api/deleteShopCollection" method="post" enctype="multipart/form-data">
+		<label>用户名</label>
+		<br />
+		<input type="text" value="2" name="userid" />
+		<br />
+		<label>key</label>
+		<br />
+		<input type="text" value="128ffd8b241af0ac44a526138d6699ad2762c611" name="appkey" />
+		<br />
+		<input type="text" value="1" name="shopcollectionid" />
+		<br />
+		<input type="submit" value="submit" />
+	</form>
+</fieldset>
+
+
+<fieldset>
+	<legend>
+		添加商家收藏
+	</legend>
+	<form action="http://localhost/aodshop/api/addShopCollection" method="post" enctype="multipart/form-data">
+		<label>用户名</label>
+		<br />
+		<input type="text" value="2" name="userid" />
+		<br />
+		<label>key</label>
+		<br />
+		<input type="text" value="128ffd8b241af0ac44a526138d6699ad2762c611" name="appkey" />
+		<br />
+		<label>商家id</label>
+		<br />
+		<input type="text" value="1" name="shopid" />
+		<br />
+		<input type="submit" value="submit" />
+	</form>
+</fieldset>
+
+
+<fieldset>
+	<legend>
+		浏览个人商品收藏
+	</legend>
+	<form action="http://localhost/aodshop/api/listProductCollection" method="post" enctype="multipart/form-data">
+		<label>用户名</label>
+		<br />
+		<input type="text" value="2" name="userid" />
+		<br />
+		<label>key</label>
+		<br />
+		<input type="text" value="128ffd8b241af0ac44a526138d6699ad2762c611" name="appkey" />
+		<br />
+		<input type="submit" value="submit" />
+	</form>
+</fieldset>
+
+
+<fieldset>
+	<legend>
+		删除商品收藏
+	</legend>
+	<form action="http://localhost/aodshop/api/deleteProductCollection" method="post" enctype="multipart/form-data">
+		<label>用户名</label>
+		<br />
+		<input type="text" value="2" name="userid" />
+		<br />
+		<label>key</label>
+		<br />
+		<input type="text" value="128ffd8b241af0ac44a526138d6699ad2762c611" name="appkey" />
+		<br />
+		<input type="text" value="1" name="productcollectionid" />
+		<br />
+		<input type="submit" value="submit" />
+	</form>
+</fieldset>
+
+<fieldset>
+	<legend>
+		添加商品收藏
+	</legend>
+	<form action="http://localhost/aodshop/api/addProductCollection" method="post" enctype="multipart/form-data">
+		<label>用户名</label>
+		<br />
+		<input type="text" value="2" name="userid" />
+		<br />
+		<label>key</label>
+		<br />
+		<input type="text" value="128ffd8b241af0ac44a526138d6699ad2762c611" name="appkey" />
+		<br />
+		<input type="text" value="1" name="productid" />
+		<br />
+		<input type="submit" value="submit" />
+	</form>
+</fieldset>
+
+<fieldset>
+	<legend>
+		获取商品信息
+	</legend>
+	<form action="http://localhost/aodshop/api/getProducts" method="post" enctype="multipart/form-data">
+		<label>用户名</label>
+		<br />
+		<input type="text" value="2" name="userid" />
+		<br />
+		<label>key</label>
+		<br />
+		<input type="text" value="128ffd8b241af0ac44a526138d6699ad2762c611" name="appkey" />
+		<br />
+		<input type="text" value="1" name="start" />
+		<br />
+		<input type="text" value="1" name="number" />
+		<br />
+			
+		<input type="submit" value="submit" />
+	</form>
+</fieldset>
+
+<fieldset>
+	<legend>
 		修改用户密码
 	</legend>
 	<form action="http://localhost/aodshop/api/editUserPassword" method="post" enctype="multipart/form-data">
@@ -69,17 +223,6 @@
 		<label>手机</label>
 		<br />
 		<input type="text" value="13382188373" name="phone" />
-		<br />
-		<label>公司名称</label>
-		<br />
-		<input type="text" value="中华公司" name="company_name" />
-		<br />
-		<label>公司地址</label>
-		<br />
-		<input type="text" value="中国" name="company_addr" />
-		<br />
-		<label>用户分类id</label>
-		<br />
 		<input type="text" value="1" name="user_cat_id" />
 		<br />
 		<input type="submit" value="submit" />

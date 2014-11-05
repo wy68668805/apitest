@@ -14,9 +14,41 @@
 
 <fieldset>
 	<legend>
+		浏览获商品的评论
+	</legend>
+	<form action="http://localhost/aodshop/api/getProductComments" method="post" enctype="multipart/form-data">
+		<label>用户名</label>
+		<br />
+		<input type="text" value="4" name="userid" />
+		<br />
+		<label>key</label>
+		<br />
+		<input type="text" value="eeccb4ba093eed7e281f729a2b8af30cbb8e694f" name="appkey" />
+		<br />
+		
+		<label>产品id</label>
+		<br />
+		<input type="text" value="1" name="productid" />
+		<br />
+		
+		<label>start</label>
+		<br />
+		<input type="text" value="1" name="start" />
+		<br />
+		<label>number</label>
+		<br />
+		<input type="text" value="1" name="number" />
+		<br />
+		<input type="submit" value="submit" />
+	</form>
+</fieldset>
+
+
+<fieldset>
+	<legend>
 		获取广告
 	</legend>
-	<form action="http://localhost/aodshop/api/getAdvertisings/1/0/1" method="post" enctype="multipart/form-data">
+	<form action="http://localhost/aodshop/api/getAdvertisings/1/0/1" method="get" enctype="multipart/form-data">
 		<input type="submit" value="submit" />
 	</form>
 </fieldset>
@@ -151,13 +183,33 @@
 	<form action="http://localhost/aodshop/api/getProducts" method="post" enctype="multipart/form-data">
 		<label>用户名</label>
 		<br />
-		<input type="text" value="2" name="userid" />
+		<input type="text" value="4" name="userid" />
 		<br />
 		<label>key</label>
 		<br />
-		<input type="text" value="128ffd8b241af0ac44a526138d6699ad2762c611" name="appkey" />
+		<input type="text" value="eeccb4ba093eed7e281f729a2b8af30cbb8e694f" name="appkey" />
+		<br />
+		<label>district_id</label>
+		<br />
+		<input type="text" value="1" name="districtid" />
+		<br />
+		
+		<label>is_pass</label>
+		<br />
+		<input type="text" value="1" name="ispass" />
+		<br />
+		
+		<label>is_onsale</label>
+		<br />
+		<input type="text" value="1" name="onsale" />
+		<br />
+		
+		
+		<label>start</label>
 		<br />
 		<input type="text" value="1" name="start" />
+		<br />
+		<label>number</label>
 		<br />
 		<input type="text" value="1" name="number" />
 		<br />
